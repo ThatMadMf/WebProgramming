@@ -1,0 +1,51 @@
+table {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    padding: 30;
+    border: 1px solid black;
+}
+
+td.side {
+    background-color: orange;
+    width: 20%;
+}
+
+td.top {
+    background-color: blue;
+    height: 15%;
+}
+
+td.top:hover {
+    background-color: darkmagenta;
+    text-decoration: underline;
+}
+
+td.bottom {
+    background-color: blue;
+    height: 15%;
+}
+
+
+td.bottom:hover {
+    text-decoration: underline;
+}
+
+td.middle {
+    height: 70%;
+}
+
+td.middle.p {
+    display: none;
+}
+
+p {
+    display: none;
+}
+
+
+td.middle:hover p {
+    display: block;
+}
