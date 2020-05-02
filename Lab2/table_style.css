@@ -37,14 +37,15 @@ td.middle {
     height: 70%;
 }
 
-td.middle.p {
-    display: none;
-}
-
 p {
     display: none;
+    position: fixed;
 }
 
+ul {
+    padding: 50px;
+    position: fixed;
+}
 
 td.middle:hover p {
     display: block;
