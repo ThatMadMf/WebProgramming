@@ -22,14 +22,8 @@
   background-color: white;
 }
 
-p {
-  display: none;
-}
-
 ul {
-  padding-left: 25%;
-  padding-top: 10%;
-  position: fixed;
+ text-align: left;
 }
 
 .row {
@@ -61,11 +55,10 @@ ul {
   text-decoration: underline;
 }
 
-.border:hover p{
-  display: block;
+.main:hover {
+  background-color: seagreen;
 }
 
-.main:hover p{
-  display: block;
-  text-decoration: underline;
+.border:hover {
+  background-color: seagreen;
 }

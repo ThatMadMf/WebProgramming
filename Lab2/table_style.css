@@ -38,7 +38,7 @@ td.middle {
     align-items: center;
 }
 
-p {
+side.p {
     display: none;
 }
 
@@ -46,6 +46,6 @@ ul {
   align-items: center;
 }
 
-td.middle:hover p {
-    display: block;
+td.middle:hover {
+    background-color: seagreen;
 }
