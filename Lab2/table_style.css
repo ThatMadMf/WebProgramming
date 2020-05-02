@@ -35,16 +35,15 @@ td.bottom:hover {
 
 td.middle {
     height: 70%;
+    align-items: center;
 }
 
 p {
     display: none;
-    position: fixed;
 }
 
 ul {
-    padding: 50px;
-    position: fixed;
+  align-items: center;
 }
 
 td.middle:hover p {
