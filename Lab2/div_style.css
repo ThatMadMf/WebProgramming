@@ -5,11 +5,11 @@
 }
 
 .border {
+  display: table-cell;
+  vertical-align: bottom;
   float: left;
   width: 20%;
   height: 100%;
-  text-align: center;
-  display: table-column;
   background-color: orange;
 }
 
@@ -17,22 +17,55 @@
   float: left;
   width: 60%;
   height: 100%;
-  display: table-column;
+  display: table-cell;
+  vertical-align: middle;
   background-color: white;
-  text-align: center;
+}
+
+p {
+  display: none;
+}
+
+ul {
+  padding-left: 25%;
+  padding-top: 10%;
+  position: fixed;
 }
 
 .row {
   display: table-row;
   background-color: brown;
+  text-align: center;
 }
 
 .header {
+  display: table-cell;
+  vertical-align: middle;
   height: 15%;
   background-color: blue;
 }
 
 .footer {
+  display: table-cell;
+  vertical-align: middle;
   height: 15%;
   background-color: blue;
+}
+
+.header:hover {
+  text-decoration: underline;
+  background-color: purple;
+}
+
+.footer:hover {
+  text-decoration: underline;
+}
+
+.border:hover p{
+  display: block;
+}
+
+.main:hover p{
+  display: block;
+  text-decoration: underline;
 }
