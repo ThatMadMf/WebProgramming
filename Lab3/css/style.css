@@ -4,3 +4,52 @@ div.square {
   background-color:green;
   position:fixed;
 }
+
+body {
+  margin: 0;
+}
+
+.carousel {
+  background-color: #eee;
+  white-space: nowrap;
+  display: table;
+}
+
+.carousel-el {
+  display: none;
+  vertical-align: middle;
+  padding: 13px;
+}
+
+.carousel-el.main, .carousel-el.active{
+  display: table-cell;
+  width: 400px;
+  height: 400px;
+}
+
+.carousel-el.carousel-el.cropped {
+  width: 10%;
+  height: 400px;
+  display: table-cell;
+  overflow: hidden;
+  object-fit: none;
+}
+
+.carousel-el.main img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-el.active img {
+  display: block;
+  height: 95%;
+  width: 95%;
+}
+
+.carousel-el.cropped img {
+  display: block;
+  height: 95%;
+  width: 100%;
+  object-fit: cover;
+}
