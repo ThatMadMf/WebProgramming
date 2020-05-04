@@ -10,9 +10,14 @@ body {
 }
 
 .carousel {
+  height: 550px;
+  width: 100%;
   background-color: #eee;
   white-space: nowrap;
-  display: table;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .carousel-el {
@@ -21,18 +26,45 @@ body {
   padding: 13px;
 }
 
-.carousel-el.main, .carousel-el.active{
-  display: table-cell;
-  width: 400px;
-  height: 400px;
-}
 
-.carousel-el.carousel-el.cropped {
+.carousel-el.cropped-left {
   width: 10%;
-  height: 400px;
-  display: table-cell;
+  height: 500px;
+  display: flex;
   overflow: hidden;
   object-fit: none;
+  order: 1;
+}
+
+.carousel-el.previous {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  order: 2;
+}
+
+
+.carousel-el.main {
+  display: flex;
+  width: 540px;
+  height: 540px;
+  order: 3;
+}
+
+.carousel-el.next {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  order: 4;
+}
+
+.carousel-el.cropped-right {
+  width: 10%;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  object-fit: none;
+  order: 5;
 }
 
 .carousel-el.main img {
@@ -41,13 +73,13 @@ body {
   width: 100%;
 }
 
-.carousel-el.active img {
+.carousel-el.next img, .carousel-el.previous img {
   display: block;
   height: 95%;
   width: 95%;
 }
 
-.carousel-el.cropped img {
+.carousel-el.cropped-left img, .carousel-el.cropped-right img {
   display: block;
   height: 95%;
   width: 100%;
