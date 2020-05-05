@@ -1,60 +1,66 @@
+  
 <html>
 
-<head>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-
-<body>
-  <form>
-    <div class="form-group w-50">
-
-      <label>Enter your name</label>
-
-      <div class="row">
-
-        <div class="col-sm">
-          <input type="text" class="form-control" placeholder="First name" id="firstName" pattern="[a-zA-Zа-яА-Я]{1,15}"
-            maxlength="15" oninvalid="this.setCustomValidity(this.willValidate?'':'Поле повинно містити лише літери')">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  
+  <body>
+    <form>
+      <div class="form-group w-50">
+  
+        <label>Enter your name</label>
+  
+        <div class="row">
+  
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="First name" id="firstName" pattern="[a-zA-Zа-яА-Я]{1,15}"
+              maxlength="15" oninvalid="this.setCustomValidity('Поле повинно містити лише літери')" 
+              oninput="setCustomValidity('')">
+          </div>
+  
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="Last name" id="secondName" pattern="[a-zA-Zа-яА-Я]{1,15}"
+              maxlength="15" oninvalid="this.setCustomValidity('Поле повинно містити лише літери')" 
+              oninput="setCustomValidity('')">
+          </div>
+  
         </div>
-
-        <div class="col-sm">
-          <input type="text" class="form-control" placeholder="Last name" id="secondName" pattern="[a-zA-Zа-яА-Я]{1,15}"
-            maxlength="15" oninvalid="this.setCustomValidity(this.willValidate?'':'Поле повинно містити лише літери')">
+  
+        <label>Enter your adress</label>
+  
+        <div class="row">
+  
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="Enter country" id="country"pattern="[a-zA-Zа-яА-Я]{1,15}" 
+              maxlength="15" oninvalid="this.setCustomValidity('Поле повинно містити лише літери')" 
+              oninput="setCustomValidity('')">
+          </div>
+  
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="Enter city" id="city" pattern="[a-zA-Zа-яА-Я]{1,15}"
+              maxlength="15"  oninvalid="this.setCustomValidity('Поле повинно містити лише літери')" 
+              oninput="setCustomValidity('')">
+          </div>
+  
+          <div class="col-sm">
+            <input type="text" class="form-control" pattern="[0-9]{5}" maxlength="5" placeholder="Enter mail index"
+              id="index" oninvalid="this.setCustomValidity('Поле повинно містити 5 цифр')"
+              oninput="setCustomValidity('')">
+          </div>
+  
         </div>
-
+  
+        <label for="inputEmail">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter email"
+          oninvalid="this.setCustomValidity('Email має відповідати example@mail.com')"
+          oninput="setCustomValidity('')">
+  
       </div>
-
-      <label>Enter your adress</label>
-
-      <div class="row">
-
-        <div class="col-sm">
-          <input type="text" class="form-control" placeholder="Enter country" id="country"
-            pattern="[a-zA-Zа-яА-Я]{1,15}" maxlength="15"
-            oninvalid="this.setCustomValidity(this.willValidate?'':'Поле повинно містити лише літери')">
-        </div>
-
-        <div class="col-sm">
-          <input type="text" class="form-control" placeholder="Enter city" id="city" pattern="[a-zA-Zа-яА-Я]{1,15}"
-            maxlength="15" oninvalid="this.setCustomValidity(this.willValidate?'':'Поле повинно містити лише літери')">
-        </div>
-
-        <div class="col-sm">
-          <input type="text" class="form-control" pattern="[0-9]{5}" maxlength="5" placeholder="Enter mail index"
-            id="index" oninvalid="this.setCustomValidity(this.willValidate?'':'Поле повинно містити 5 цифр')">
-        </div>
-
-      </div>
-
-      <label for="inputEmail">Email address</label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="Enter email"
-        oninvalid="this.setCustomValidity(this.willValidate?'':'Email має відповідати example@mail.com')">
-
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-
-  </form>
-</body>
-
-</html>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+  
+    </form>
+  </body>
+  
+  </html>
