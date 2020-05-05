@@ -1,1 +1,3 @@
-readfile('index.html');
+<?php
+  include('index.htm');
+?>
