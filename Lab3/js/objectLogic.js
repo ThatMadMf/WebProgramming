@@ -5,16 +5,11 @@ function moveDiv() {
 }
 function makeNewPosition() {
 
-  var width = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
+  var width = document.body.clientWidth;
+  var height = document.body.clientHeight;
 
-  var height = window.innerHeight
-    || document.documentElement.clientHeight
-    || document.body.clientHeight;
-
-  const newXCoordinate = Math.floor(Math.random() * width - 40);
-  const newYCoordinate = Math.floor(Math.random() * height - 40);
+  const newXCoordinate = Math.floor(Math.random() * (width - 50));
+  const newYCoordinate = Math.floor(Math.random() * (height - 50));
 
   return [newXCoordinate, newYCoordinate];
 }
