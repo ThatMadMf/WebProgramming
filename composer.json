@@ -1,0 +1,12 @@
+{
+    "name": "test/lab4",
+    "type": "project",
+    "description": "",
+    "authors": [
+        {
+            "name": "Max Onoshko",
+            "email": "onoshkomax@gmail.com"
+        }
+    ],
+    "require": {}
+}
