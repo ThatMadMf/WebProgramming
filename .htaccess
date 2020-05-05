@@ -1,7 +1,9 @@
-RewriteEngine on
-RewriteBase /
+<IfModule mod_rewrite.c>
+    Options -MultiViews
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^(.*)$ index.php
+    RewriteEngine On
+    #RewriteBase /Lab4/
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
