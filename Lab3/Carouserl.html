@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <div class="carousel" onclick="test()">
+  <div class="carousel" onload="initialise()">
     
     <div class="carousel-el cropped-left">
       <img src="images/first.png">
@@ -33,7 +33,8 @@
     </div>
  
   </div>
-  <input type="button" onclick="test()"></input>
+  <input type="button" value="FORWARD" onclick="forward()"></input>
+  <input type="button" value="BACK" onclick="back()"></input>
 </body>
 
 </html>
