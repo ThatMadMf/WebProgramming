@@ -26,6 +26,10 @@ body {
   padding: 13px;
 }
 
+.back-button {
+  display: flex;
+  order: 1;
+}
 
 .carousel-el.cropped-left {
   width: 10%;
@@ -33,14 +37,14 @@ body {
   display: flex;
   overflow: hidden;
   object-fit: none;
-  order: 1;
+  order: 2;
 }
 
 .carousel-el.previous {
   display: flex;
   width: 500px;
   height: 500px;
-  order: 2;
+  order: 3;
 }
 
 
@@ -48,14 +52,14 @@ body {
   display: flex;
   width: 540px;
   height: 540px;
-  order: 3;
+  order: 4;
 }
 
 .carousel-el.next {
   display: flex;
   width: 500px;
   height: 500px;
-  order: 4;
+  order: 5;
 }
 
 .carousel-el.cropped-right {
@@ -64,7 +68,12 @@ body {
   display: flex;
   overflow: hidden;
   object-fit: none;
-  order: 5;
+  order: 6;
+}
+
+.forward-button {
+  display: flex;
+  order: 7;
 }
 
 .carousel-el.main img {
@@ -84,4 +93,10 @@ body {
   height: 95%;
   width: 100%;
   object-fit: cover;
+}
+
+input[type=button] {
+  width: 2em;  
+  height: 10em;
+  padding: 40px;
 }

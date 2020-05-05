@@ -8,7 +8,7 @@ function forward() {
 }
 
 function back() {
-  index = index === elements.length ? 0 : index + 1;
+  index = index === elements.length - 1? 0 : index + 1;
   move();
 }
 
@@ -27,7 +27,7 @@ function validateNum(n) {
   }
   
   if(n < 0) {
-    return n + elements.length - 1;
+    return n + elements.length;
   }
 
   return n;
