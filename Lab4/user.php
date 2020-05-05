@@ -1,6 +1,5 @@
 <html>
 <body>
-  Welcome 
   <?php
     
     session_start();
@@ -10,5 +9,6 @@
     echo "Електронна адреса" . " <b>" . $_SESSION['email'] . "</b><br>";
 
   ?>
+
 </body>
 </html>
